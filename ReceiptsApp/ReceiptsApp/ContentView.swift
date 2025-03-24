@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  e-conomic-ios-code-challenge
+//  ReceiptsApp
 //
-//  Created by Pedro Lopes on 23/03/2025.
+//  Created by Pedro Lopes on 24/03/2025.
 //
 
 import SwiftUI
