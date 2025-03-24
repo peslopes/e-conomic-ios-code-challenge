@@ -7,16 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		400F93242D91BD00005D8F7F /* DataKit in Frameworks */ = {isa = PBXBuildFile; productRef = 400F93232D91BD00005D8F7F /* DataKit */; };
+		4011CE672D91FD4E00C3D9AC /* ReceiptCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 4011CE662D91FD4E00C3D9AC /* ReceiptCapture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40229B512D91ADFD008C6B5E /* ReceiptsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4011CE5D2D91FB7A00C3D9AC /* Exceptions for "ReceiptsApp" folder in "ReceiptsApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 40229B502D91ADFD008C6B5E /* ReceiptsApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		40229B532D91ADFD008C6B5E /* ReceiptsApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4011CE5D2D91FB7A00C3D9AC /* Exceptions for "ReceiptsApp" folder in "ReceiptsApp" target */,
+			);
 			path = ReceiptsApp;
 			sourceTree = "<group>";
 		};
@@ -27,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400F93242D91BD00005D8F7F /* DataKit in Frameworks */,
+				4011CE672D91FD4E00C3D9AC /* ReceiptCapture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +85,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				4011CE692D91FD5500C3D9AC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				40229B532D91ADFD008C6B5E /* ReceiptsApp */,
 			);
 			name = ReceiptsApp;
 			packageProductDependencies = (
-				400F93232D91BD00005D8F7F /* DataKit */,
+				4011CE662D91FD4E00C3D9AC /* ReceiptCapture */,
 			);
 			productName = ReceiptsApp;
 			productReference = 40229B512D91ADFD008C6B5E /* ReceiptsApp.app */;
@@ -109,7 +123,7 @@
 			mainGroup = 40229B482D91ADFD008C6B5E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				400F93222D91BD00005D8F7F /* XCLocalSwiftPackageReference "../Packages/DataKit" */,
+				4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 40229B522D91ADFD008C6B5E /* Products */;
@@ -140,6 +154,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4011CE692D91FD5500C3D9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4011CE682D91FD5500C3D9AC /* ReceiptCapture */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		40229B5D2D91ADFE008C6B5E /* Debug */ = {
@@ -272,6 +293,7 @@
 				DEVELOPMENT_TEAM = DZPZD745C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceiptsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +323,7 @@
 				DEVELOPMENT_TEAM = DZPZD745C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceiptsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,16 +366,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		400F93222D91BD00005D8F7F /* XCLocalSwiftPackageReference "../Packages/DataKit" */ = {
+		4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/DataKit;
+			relativePath = ../Packages/ReceiptCapture;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		400F93232D91BD00005D8F7F /* DataKit */ = {
+		4011CE662D91FD4E00C3D9AC /* ReceiptCapture */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = DataKit;
+			package = 4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */;
+			productName = ReceiptCapture;
+		};
+		4011CE682D91FD5500C3D9AC /* ReceiptCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */;
+			productName = ReceiptCapture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
