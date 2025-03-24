@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		40A3D5BE2D9106C700077B50 /* DataKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40A3D5BD2D9106C700077B50 /* DataKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		40A3D4FB2D908F1100077B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -22,6 +26,19 @@
 			remoteInfo = "e-conomic-ios-code-challenge";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40A3D58C2D90F0E400077B50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40A3D4EA2D908F0F00077B50 /* e-conomic-ios-code-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-conomic-ios-code-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A3D5BE2D9106C700077B50 /* DataKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +120,7 @@
 				40A3D4E62D908F0F00077B50 /* Sources */,
 				40A3D4E72D908F0F00077B50 /* Frameworks */,
 				40A3D4E82D908F0F00077B50 /* Resources */,
+				40A3D58C2D90F0E400077B50 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +131,7 @@
 			);
 			name = "e-conomic-ios-code-challenge";
 			packageProductDependencies = (
+				40A3D5BD2D9106C700077B50 /* DataKit */,
 			);
 			productName = "e-conomic-ios-code-challenge";
 			productReference = 40A3D4EA2D908F0F00077B50 /* e-conomic-ios-code-challenge.app */;
@@ -178,6 +198,7 @@
 					};
 					40A3D4F92D908F1100077B50 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 						TestTargetID = 40A3D4E92D908F0F00077B50;
 					};
 					40A3D5032D908F1100077B50 = {
@@ -195,6 +216,9 @@
 			);
 			mainGroup = 40A3D4E12D908F0F00077B50;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				405791DA2D91295E0072C887 /* XCLocalSwiftPackageReference "../Packages/DataKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 40A3D4EB2D908F0F00077B50 /* Products */;
 			projectDirPath = "";
@@ -412,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "peslopes.e-conomic-ios-code-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -441,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "peslopes.e-conomic-ios-code-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -450,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DZPZD745C7;
@@ -459,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "peslopes.e-conomic-ios-code-challengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/e-conomic-ios-code-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/e-conomic-ios-code-challenge";
@@ -469,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DZPZD745C7;
@@ -558,6 +585,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		405791DA2D91295E0072C887 /* XCLocalSwiftPackageReference "../Packages/DataKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/DataKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40A3D5BD2D9106C700077B50 /* DataKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 40A3D4E22D908F0F00077B50 /* Project object */;
 }
