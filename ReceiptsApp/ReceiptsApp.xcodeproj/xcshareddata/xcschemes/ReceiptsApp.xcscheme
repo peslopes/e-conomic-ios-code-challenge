@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40A3D4E92D908F0F00077B50"
-               BuildableName = "e-conomic-ios-code-challenge.app"
-               BlueprintName = "e-conomic-ios-code-challenge"
-               ReferencedContainer = "container:e-conomic-ios-code-challenge.xcodeproj">
+               BlueprintIdentifier = "40229B502D91ADFD008C6B5E"
+               BuildableName = "ReceiptsApp.app"
+               BlueprintName = "ReceiptsApp"
+               ReferencedContainer = "container:ReceiptsApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,18 +27,22 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:ReceiptsApp/ReceiptAppTestPlan.xctestplan">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40A3D4F92D908F1100077B50"
-               BuildableName = "e-conomic-ios-code-challengeTests.xctest"
-               BlueprintName = "e-conomic-ios-code-challengeTests"
-               ReferencedContainer = "container:e-conomic-ios-code-challenge.xcodeproj">
+               BlueprintIdentifier = "400F93282D91BD3C005D8F7F"
+               BuildableName = "ReceiptsAppTests.xctest"
+               BlueprintName = "ReceiptsAppTests"
+               ReferencedContainer = "container:ReceiptsApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,21 +50,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40A3D5032D908F1100077B50"
-               BuildableName = "e-conomic-ios-code-challengeUITests.xctest"
-               BlueprintName = "e-conomic-ios-code-challengeUITests"
-               ReferencedContainer = "container:e-conomic-ios-code-challenge.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40A3D5792D90F0E400077B50"
+               BlueprintIdentifier = "400F93462D91C305005D8F7F"
                BuildableName = "DataKitTests.xctest"
                BlueprintName = "DataKitTests"
-               ReferencedContainer = "container:e-conomic-ios-code-challenge.xcodeproj">
+               ReferencedContainer = "container:ReceiptsApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -79,10 +72,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "40A3D4E92D908F0F00077B50"
-            BuildableName = "e-conomic-ios-code-challenge.app"
-            BlueprintName = "e-conomic-ios-code-challenge"
-            ReferencedContainer = "container:e-conomic-ios-code-challenge.xcodeproj">
+            BlueprintIdentifier = "40229B502D91ADFD008C6B5E"
+            BuildableName = "ReceiptsApp.app"
+            BlueprintName = "ReceiptsApp"
+            ReferencedContainer = "container:ReceiptsApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -96,10 +89,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "40A3D4E92D908F0F00077B50"
-            BuildableName = "e-conomic-ios-code-challenge.app"
-            BlueprintName = "e-conomic-ios-code-challenge"
-            ReferencedContainer = "container:e-conomic-ios-code-challenge.xcodeproj">
+            BlueprintIdentifier = "40229B502D91ADFD008C6B5E"
+            BuildableName = "ReceiptsApp.app"
+            BlueprintName = "ReceiptsApp"
+            ReferencedContainer = "container:ReceiptsApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

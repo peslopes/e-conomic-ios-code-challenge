@@ -1,8 +1,8 @@
 import XCTest
 @testable import DataKit
 
-class ReceiptRepositoryTests: XCTestCase {
-    func testSaveAndFetchReceiptsSuccess() async throws {
+final public class ReceiptRepositoryTests: XCTestCase {
+    public func testSaveAndFetchReceiptsSuccess() async throws {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         
         let receipt = Receipt(id: UUID(), imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
@@ -16,7 +16,7 @@ class ReceiptRepositoryTests: XCTestCase {
         XCTAssertEqual(fetched.first?.currency, "EUR", "Currency should match saved value")
     }
     
-    func testSaveAndFetchOneReceiptSuccess() async throws {
+    public func testSaveAndFetchOneReceiptSuccess() async throws {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         
         let id = UUID()
@@ -31,7 +31,7 @@ class ReceiptRepositoryTests: XCTestCase {
         XCTAssertEqual(fetched.currency, "EUR", "Currency should match saved value")
     }
     
-    func testSaveAndDeleteOneReceiptSuccess() async throws {
+    public func testSaveAndDeleteOneReceiptSuccess() async throws {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         
         let id = UUID()
@@ -49,7 +49,7 @@ class ReceiptRepositoryTests: XCTestCase {
         XCTAssertEqual(fetched.first?.currency, "EUR", "Currency should match saved value")
     }
     
-    func testFetchEmptyRepository() async throws {
+    public func testFetchEmptyRepository() async throws {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         let fetched = try await repository.getAll()
         

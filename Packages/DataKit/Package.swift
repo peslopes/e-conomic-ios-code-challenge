@@ -7,16 +7,20 @@ let package = Package(
     name: "DataKit",
     platforms: [.iOS(.v18)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "DataKit",
             targets: ["DataKit"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/dmytro-anokhin/core-data-model-description", .upToNextMajor(from: "0.0.11")),
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DataKit"),
+            name: "DataKit",
+            dependencies: [
+                .product(name: "CoreDataModelDescription", package: "core-data-model-description")
+            ]
+        ),
         .testTarget(
             name: "DataKitTests",
             dependencies: ["DataKit"]
