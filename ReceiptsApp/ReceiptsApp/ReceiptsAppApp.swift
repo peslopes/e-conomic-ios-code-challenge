@@ -1,17 +1,17 @@
-//
-//  ReceiptsAppApp.swift
-//  ReceiptsApp
-//
-//  Created by Pedro Lopes on 24/03/2025.
-//
-
 import SwiftUI
 
 @main
-struct ReceiptsAppApp: App {
+struct MyApp: App {
+    private let coordinator: AppCoordinatorProtocol
+    
+    init() {
+        self.coordinator = AppCoordinator()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UIViewControllerRepresentableWrapper(viewController: coordinator.start())
+                .ignoresSafeArea()
         }
     }
 }
