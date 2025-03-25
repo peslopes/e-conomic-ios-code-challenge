@@ -21,7 +21,18 @@ struct HomeView: View {
                         .font(.title2)
                         .padding()
                         .background(Color.blue)
-                        .foregroundColor(.white)
+                        .foregroundStyle(Color.white)
+                        .cornerRadius(10)
+                })
+                
+                Button(action: {
+                    viewModel.showReceiptsList()
+                }, label: {
+                    Text("View Receipts")
+                        .font(.title2)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundStyle(Color.white)
                         .cornerRadius(10)
                 })
             }

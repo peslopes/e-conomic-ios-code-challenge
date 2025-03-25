@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4011CE672D91FD4E00C3D9AC /* ReceiptCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 4011CE662D91FD4E00C3D9AC /* ReceiptCapture */; };
+		40CB2E7F2D92D6E200D26F47 /* ReceiptsList in Frameworks */ = {isa = PBXBuildFile; productRef = 40CB2E7E2D92D6E200D26F47 /* ReceiptsList */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4011CE672D91FD4E00C3D9AC /* ReceiptCapture in Frameworks */,
+				40CB2E7F2D92D6E200D26F47 /* ReceiptsList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +87,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				4011CE692D91FD5500C3D9AC /* PBXTargetDependency */,
+				40CB2E832D92D6F000D26F47 /* PBXTargetDependency */,
+				40CB2E812D92D6EA00D26F47 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				40229B532D91ADFD008C6B5E /* ReceiptsApp */,
@@ -93,6 +96,7 @@
 			name = ReceiptsApp;
 			packageProductDependencies = (
 				4011CE662D91FD4E00C3D9AC /* ReceiptCapture */,
+				40CB2E7E2D92D6E200D26F47 /* ReceiptsList */,
 			);
 			productName = ReceiptsApp;
 			productReference = 40229B512D91ADFD008C6B5E /* ReceiptsApp.app */;
@@ -124,6 +128,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */,
+				4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 40229B522D91ADFD008C6B5E /* Products */;
@@ -156,9 +161,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4011CE692D91FD5500C3D9AC /* PBXTargetDependency */ = {
+		40CB2E812D92D6EA00D26F47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = 4011CE682D91FD5500C3D9AC /* ReceiptCapture */;
+			productRef = 40CB2E802D92D6EA00D26F47 /* ReceiptsList */;
+		};
+		40CB2E832D92D6F000D26F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 40CB2E822D92D6F000D26F47 /* ReceiptCapture */;
 		};
 /* End PBXTargetDependency section */
 
@@ -294,11 +303,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReceiptsApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture receipt photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select receipt photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,11 +335,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReceiptsApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture receipt photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select receipt photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,6 +383,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../Packages/ReceiptCapture;
 		};
+		4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/ReceiptsList;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -378,7 +395,17 @@
 			package = 4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */;
 			productName = ReceiptCapture;
 		};
-		4011CE682D91FD5500C3D9AC /* ReceiptCapture */ = {
+		40CB2E7E2D92D6E200D26F47 /* ReceiptsList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */;
+			productName = ReceiptsList;
+		};
+		40CB2E802D92D6EA00D26F47 /* ReceiptsList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */;
+			productName = ReceiptsList;
+		};
+		40CB2E822D92D6F000D26F47 /* ReceiptCapture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */;
 			productName = ReceiptCapture;

@@ -10,4 +10,8 @@ class HomeViewModel: ObservableObject {
     func showReceiptCapture() {
         coordinator.showReceiptCapture()
     }
+    
+    func showReceiptsList() {
+        coordinator.showReceiptsList()
+    }
 }
