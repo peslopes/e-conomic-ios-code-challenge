@@ -1,10 +1,12 @@
 import UIKit
 import SwiftUI
 import ReceiptCapture
+import ReceiptsList
 
 class AppCoordinator: AppCoordinatorProtocol {
     private let navigationController: UINavigationController
-    private var receiptCoordinator: ReceiptRouterProtocol?
+    private var receiptCaptureCoordinator: ReceiptCaptureRouterProtocol?
+    private var receiptsListCoordinator: ReceiptsListRouterProtocol?
     
     init(navigationController: UINavigationController = UINavigationController()) {
         self.navigationController = navigationController
@@ -17,9 +19,15 @@ class AppCoordinator: AppCoordinatorProtocol {
     }
     
     func showReceiptCapture() {
-        let coordinator = ReceiptFeature.coordinator(navigationController: navigationController)
-        let viewController = coordinator.start()
-        self.receiptCoordinator = coordinator
+        let coordinator = ReceiptCaptureFeature.coordinator(navigationController: navigationController)
+        let _ = coordinator.start()
+        self.receiptCaptureCoordinator = coordinator
+    }
+    
+    func showReceiptsList() {
+        let coordinator = ReceiptListFeature.coordinator(navigationController: navigationController)
+        let _ = coordinator.start()
+        self.receiptsListCoordinator = coordinator
     }
     
     private func makeRootViewController() -> UIViewController {

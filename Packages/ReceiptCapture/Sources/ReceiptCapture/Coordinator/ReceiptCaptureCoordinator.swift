@@ -2,7 +2,7 @@ import UIKit
 import SwiftUI
 import DataKit
 
-class ReceiptCoordinator: @preconcurrency ReceiptRouterProtocol {
+class ReceiptCaptureCoordinator: @preconcurrency ReceiptCaptureRouterProtocol {
     private let navigationController: UINavigationController
     private let repository: ReceiptRepositoryProtocol
     
@@ -13,16 +13,10 @@ class ReceiptCoordinator: @preconcurrency ReceiptRouterProtocol {
     
     @MainActor
     func start() -> UIViewController {
-        let viewModel = ReceiptCaptureViewModel(repository: repository, coordinator: self)
+        let viewModel = ReceiptCaptureViewModel(repository: repository)
         let view = ReceiptCaptureView(viewModel: viewModel)
         let hostingController = UIHostingController(rootView: view)
         navigationController.pushViewController(hostingController, animated: false)
         return hostingController
-    }
-    
-    func dismiss() {
-        DispatchQueue.main.async { [weak self] in
-            self?.navigationController.popViewController(animated: true)
-        }
     }
 }

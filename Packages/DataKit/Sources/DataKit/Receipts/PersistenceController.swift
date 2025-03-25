@@ -13,6 +13,7 @@ struct PersistenceController {
                     managedObjectClass: ReceiptEntity.self,
                     attributes: [
                         .attribute(name: "id", type: .UUIDAttributeType, isOptional: true),
+                        .attribute(name: "name", type: .stringAttributeType, isOptional: true),
                         .attribute(name: "imageData", type: .binaryDataAttributeType, isOptional: true),
                         .attribute(name: "date", type: .dateAttributeType, isOptional: true),
                         .attribute(name: "amount", type: .doubleAttributeType, isOptional: false),

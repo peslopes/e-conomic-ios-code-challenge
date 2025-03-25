@@ -4,26 +4,26 @@
 import PackageDescription
 
 let package = Package(
-    name: "ReceiptCapture",
+    name: "ReceiptsList",
     platforms: [.iOS(.v17)],
     products: [
         .library(
-            name: "ReceiptCapture",
-            targets: ["ReceiptCapture"]),
+            name: "ReceiptsList",
+            targets: ["ReceiptsList"]),
     ],
     dependencies: [
         .package(path: "../DataKit"),
     ],
     targets: [
         .target(
-            name: "ReceiptCapture",
+            name: "ReceiptsList",
             dependencies: [
                 .product(name: "DataKit", package: "DataKit")
             ]
         ),
         .testTarget(
-            name: "ReceiptCaptureTests",
-            dependencies: ["ReceiptCapture"]
+            name: "ReceiptsListTests",
+            dependencies: ["ReceiptsList"]
         ),
     ]
 )
