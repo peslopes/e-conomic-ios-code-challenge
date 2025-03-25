@@ -18,7 +18,7 @@ class MockReceiptRepository: ReceiptRepositoryProtocol {
     }
     
     func get(_ id: UUID) async throws -> DataKit.Receipt {
-        Receipt(imageData: Data(), date: Date(), amount: 0, currency: "")
+        Receipt(name: "", imageData: Data(), date: Date(), amount: 0, currency: "")
     }
     
     func delete(_ id: UUID) async throws {}

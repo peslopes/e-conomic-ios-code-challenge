@@ -5,7 +5,7 @@ final public class ReceiptRepositoryTests: XCTestCase {
     public func testSaveAndFetchReceiptsSuccess() async throws {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         
-        let receipt = Receipt(id: UUID(), imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
+        let receipt = Receipt(id: UUID(), name: "test", imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
         
         try await repository.save(receipt)
         let fetched = try await repository.getAll()
@@ -20,8 +20,8 @@ final public class ReceiptRepositoryTests: XCTestCase {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         
         let id = UUID()
-        let receipt1 = Receipt(id: id, imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
-        let receipt2 = Receipt(id: UUID(), imageData: Data(count: 2), date: Date(), amount: 70.0, currency: "EUR")
+        let receipt1 = Receipt(id: id, name: "test1", imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
+        let receipt2 = Receipt(id: UUID(), name: "test2", imageData: Data(count: 2), date: Date(), amount: 70.0, currency: "EUR")
         
         try await repository.save(receipt1)
         try await repository.save(receipt2)
@@ -35,8 +35,8 @@ final public class ReceiptRepositoryTests: XCTestCase {
         let repository = DataRepositoryProvider.makeReceiptRepository(persistenceInMemory: true)
         
         let id = UUID()
-        let receipt1 = Receipt(id: id, imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
-        let receipt2 = Receipt(id: UUID(), imageData: Data(count: 2), date: Date(), amount: 70.0, currency: "EUR")
+        let receipt1 = Receipt(id: id, name: "test1", imageData: Data(count: 1), date: Date(), amount: 50.0, currency: "EUR")
+        let receipt2 = Receipt(id: UUID(), name: "test2", imageData: Data(count: 2), date: Date(), amount: 70.0, currency: "EUR")
         
         try await repository.save(receipt1)
         try await repository.save(receipt2)
