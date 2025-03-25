@@ -8,34 +8,32 @@ struct HomeView: View {
     }
     
     public var body: some View {
-        NavigationView {
-            VStack {
-                Text("Welcome to Receipts Manager")
-                    .font(.largeTitle)
+        VStack {
+            Text("Welcome to Receipts Manager")
+                .font(.largeTitle)
+                .padding()
+            
+            Button(action: {
+                viewModel.showReceiptCapture()
+            }, label: {
+                Text("Capture Receipt")
+                    .font(.title2)
                     .padding()
-                
-                Button(action: {
-                    viewModel.showReceiptCapture()
-                }, label: {
-                    Text("Capture Receipt")
-                        .font(.title2)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundStyle(Color.white)
-                        .cornerRadius(10)
-                })
-                
-                Button(action: {
-                    viewModel.showReceiptsList()
-                }, label: {
-                    Text("View Receipts")
-                        .font(.title2)
-                        .padding()
-                        .background(Color.green)
-                        .foregroundStyle(Color.white)
-                        .cornerRadius(10)
-                })
-            }
+                    .background(Color.blue)
+                    .foregroundStyle(Color.white)
+                    .cornerRadius(10)
+            })
+            
+            Button(action: {
+                viewModel.showReceiptsList()
+            }, label: {
+                Text("View Receipts")
+                    .font(.title2)
+                    .padding()
+                    .background(Color.green)
+                    .foregroundStyle(Color.white)
+                    .cornerRadius(10)
+            })
         }
     }
 }
