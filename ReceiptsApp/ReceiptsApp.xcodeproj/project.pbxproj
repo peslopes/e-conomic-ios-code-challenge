@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4011CE672D91FD4E00C3D9AC /* ReceiptCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 4011CE662D91FD4E00C3D9AC /* ReceiptCapture */; };
+		40CB2E7F2D92D6E200D26F47 /* ReceiptsList in Frameworks */ = {isa = PBXBuildFile; productRef = 40CB2E7E2D92D6E200D26F47 /* ReceiptsList */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40229B512D91ADFD008C6B5E /* ReceiptsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceiptsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4011CE5D2D91FB7A00C3D9AC /* Exceptions for "ReceiptsApp" folder in "ReceiptsApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 40229B502D91ADFD008C6B5E /* ReceiptsApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		40229B532D91ADFD008C6B5E /* ReceiptsApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4011CE5D2D91FB7A00C3D9AC /* Exceptions for "ReceiptsApp" folder in "ReceiptsApp" target */,
+			);
+			path = ReceiptsApp;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40229B4E2D91ADFD008C6B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4011CE672D91FD4E00C3D9AC /* ReceiptCapture in Frameworks */,
+				40CB2E7F2D92D6E200D26F47 /* ReceiptsList in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400F93322D91BD50005D8F7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40229B482D91ADFD008C6B5E = {
+			isa = PBXGroup;
+			children = (
+				40229B532D91ADFD008C6B5E /* ReceiptsApp */,
+				400F93322D91BD50005D8F7F /* Frameworks */,
+				40229B522D91ADFD008C6B5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40229B522D91ADFD008C6B5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40229B512D91ADFD008C6B5E /* ReceiptsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40229B502D91ADFD008C6B5E /* ReceiptsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40229B5F2D91ADFE008C6B5E /* Build configuration list for PBXNativeTarget "ReceiptsApp" */;
+			buildPhases = (
+				40229B4D2D91ADFD008C6B5E /* Sources */,
+				40229B4E2D91ADFD008C6B5E /* Frameworks */,
+				40229B4F2D91ADFD008C6B5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40CB2E832D92D6F000D26F47 /* PBXTargetDependency */,
+				40CB2E812D92D6EA00D26F47 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				40229B532D91ADFD008C6B5E /* ReceiptsApp */,
+			);
+			name = ReceiptsApp;
+			packageProductDependencies = (
+				4011CE662D91FD4E00C3D9AC /* ReceiptCapture */,
+				40CB2E7E2D92D6E200D26F47 /* ReceiptsList */,
+			);
+			productName = ReceiptsApp;
+			productReference = 40229B512D91ADFD008C6B5E /* ReceiptsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40229B492D91ADFD008C6B5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					40229B502D91ADFD008C6B5E = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 40229B4C2D91ADFD008C6B5E /* Build configuration list for PBXProject "ReceiptsApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40229B482D91ADFD008C6B5E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */,
+				4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 40229B522D91ADFD008C6B5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40229B502D91ADFD008C6B5E /* ReceiptsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40229B4F2D91ADFD008C6B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40229B4D2D91ADFD008C6B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40CB2E812D92D6EA00D26F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 40CB2E802D92D6EA00D26F47 /* ReceiptsList */;
+		};
+		40CB2E832D92D6F000D26F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 40CB2E822D92D6F000D26F47 /* ReceiptCapture */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40229B5D2D91ADFE008C6B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40229B5E2D91ADFE008C6B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40229B602D91ADFE008C6B5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReceiptsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DZPZD745C7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceiptsApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture receipt photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select receipt photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peslopes.ReceiptsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40229B612D91ADFE008C6B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReceiptsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DZPZD745C7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReceiptsApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture receipt photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select receipt photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = peslopes.ReceiptsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40229B4C2D91ADFD008C6B5E /* Build configuration list for PBXProject "ReceiptsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40229B5D2D91ADFE008C6B5E /* Debug */,
+				40229B5E2D91ADFE008C6B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40229B5F2D91ADFE008C6B5E /* Build configuration list for PBXNativeTarget "ReceiptsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40229B602D91ADFE008C6B5E /* Debug */,
+				40229B612D91ADFE008C6B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/ReceiptCapture;
+		};
+		4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/ReceiptsList;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4011CE662D91FD4E00C3D9AC /* ReceiptCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */;
+			productName = ReceiptCapture;
+		};
+		40CB2E7E2D92D6E200D26F47 /* ReceiptsList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */;
+			productName = ReceiptsList;
+		};
+		40CB2E802D92D6EA00D26F47 /* ReceiptsList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4070A0A12D92C75D00DA5FBA /* XCLocalSwiftPackageReference "../Packages/ReceiptsList" */;
+			productName = ReceiptsList;
+		};
+		40CB2E822D92D6F000D26F47 /* ReceiptCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4011CE5B2D91F9F000C3D9AC /* XCLocalSwiftPackageReference "../Packages/ReceiptCapture" */;
+			productName = ReceiptCapture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 40229B492D91ADFD008C6B5E /* Project object */;
+}

@@ -1,0 +1,15 @@
+{
+  "originHash" : "ecda5cd532791ba33238b45b780bfcbdcc31f603bd5510e1b180e812fccdae04",
+  "pins" : [
+    {
+      "identity" : "core-data-model-description",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dmytro-anokhin/core-data-model-description",
+      "state" : {
+        "revision" : "e0b79309bc4e993ae26af3a9d2fc6f2c2c9bf5ad",
+        "version" : "0.0.11"
+      }
+    }
+  ],
+  "version" : 3
+}
